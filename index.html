@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="favicon.png" />
+
+		<link rel="stylesheet" href="css/style.css" />
+		<title>DrivenEats</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>DrivenEats</h1>
+			<p>Sua comida em 6 minutos</p>
+		</header>
+
+		<main>
+			<div class="opcoes-pratos">
+				<span class="titulo-categoria">Primeiro, seu prato</span>
+				<div class="opcoes">
+					<div class="prato item" onclick="selecionaPrato(this)">
+						<img src="assets/pizza.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Pizza</span>
+							<span class="descricao">Pizza de Pepperoni com muito queijo</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">29,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+
+					<div class="prato item" onclick="selecionaPrato(this)">
+						<img src="assets/hamburguer.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Hambúrguer</span>
+							<span class="descricao"
+								>Delicioso hambúrguer com batata-frita</span
+							>
+							<span>
+								<span>R$</span>
+								<span class="valor">22,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+
+					<div class="prato item" onclick="selecionaPrato(this)">
+						<img src="assets/estrogonofe.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Estrogonofe de Carne</span>
+							<span class="descricao">Acompanha arroz e batata palha</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">24,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+				</div>
+			</div>
+
+			<div class="opcoes-bebidas">
+				<span class="titulo-categoria">Agora, sua bebida</span>
+				<div class="opcoes">
+					<div class="bebida item" onclick="selecionaBebida(this)">
+						<img src="assets/refrigerante.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Refrigerante</span>
+							<span class="descricao">Lata 350ml</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">4,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+
+					<div class="bebida item" onclick="selecionaBebida(this)">
+						<img src="assets/suco.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Suco de Laranja</span>
+							<span class="descricao">550ml</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">8,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+
+					<div class="bebida item" onclick="selecionaBebida(this)">
+						<img src="assets/agua.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Água</span>
+							<span class="descricao">500ml</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">2,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+				</div>
+			</div>
+
+			<div class="opcoes-sobremesas">
+				<span class="titulo-categoria">Por fim, sua sobremesa</span>
+				<div class="opcoes">
+					<div class="sobremesa item" onclick="selecionaSobremesas(this)">
+						<img src="assets/banoffe.png" />
+						<span class="descricao-prato">
+							<span class="nome">Banoffe</span>
+							<span class="descricao">Banana com muito doce de leite</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">9,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+
+					<div class="sobremesa item" onclick="selecionaSobremesas(this)">
+						<img src="assets/torta-limao.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Torta</span>
+							<span class="descricao">de Limão</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">7,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+
+					<div class="sobremesa item" onclick="selecionaSobremesas(this)">
+						<img src="assets/pudim.jpg" />
+						<span class="descricao-prato">
+							<span class="nome">Pudim</span>
+							<span class="descricao">Pudimzin</span>
+							<span>
+								<span>R$</span>
+								<span class="valor">6,90</span>
+							</span>
+						</span>
+						<ion-icon class="check" name="checkmark-circle"></ion-icon>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<a class="link" href="#">
+				<button class="botao" disabled="true" onclick="finalizaPedido()">
+					<p>
+						Selecione os 3 itens <br />
+						para fechar o pedido
+					</p>
+				</button>
+			</a>
+		</footer>
+
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

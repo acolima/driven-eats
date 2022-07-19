@@ -1,0 +1,217 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	width: 414px;
+	height: 92px;
+
+	background-color: #cf2b2b;
+
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+	padding-left: 21px;
+}
+
+header h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 44px;
+
+	color: #ffffff;
+
+	margin: 5px 0;
+}
+
+header p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+main {
+	height: 842px;
+	width: 414px;
+
+	margin: 92px 0;
+
+	background-color: #e5e5e5;
+}
+
+.titulo-categoria {
+	font-family: 'Righteous', cursive;
+	font-size: 26px;
+	color: #333333;
+
+	margin-left: 19px;
+}
+
+.opcoes {
+	display: flex;
+	gap: 16px;
+
+	margin-top: 16px;
+	padding: 0 19px;
+
+	overflow-x: scroll;
+}
+
+.opcoes::-webkit-scrollbar {
+	display: none;
+}
+
+.opcoes-pratos {
+	height: 292px;
+
+	padding-top: 25px;
+}
+
+.opcoes-bebidas {
+	height: 276px;
+
+	padding-top: 21px;
+}
+
+.opcoes-sobremesas {
+	height: 273px;
+
+	padding-top: 21px;
+}
+
+.item {
+	width: 172px;
+
+	border-radius: 9px;
+
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	flex-shrink: 0;
+
+	position: relative;
+}
+
+.prato {
+	height: 216px;
+}
+
+.bebida {
+	height: 202px;
+}
+
+.sobremesa {
+	height: 197px;
+}
+
+img {
+	width: 144px;
+	border-radius: 4px;
+
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+.prato img,
+.bebida img {
+	height: 87px;
+}
+
+.sobremesa img {
+	height: 82px;
+}
+
+.descricao-prato {
+	height: 100px;
+	width: 144px;
+
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.nome {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+
+	color: #333333;
+}
+
+.descricao {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 19px;
+
+	color: #a6a6a6;
+}
+
+.valor > span {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+
+	color: #000;
+}
+
+footer {
+	width: 414px;
+	height: 92px;
+
+	background-color: #fff;
+
+	position: fixed;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer button {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 23px;
+
+	width: 364px;
+	height: 61px;
+
+	background-color: #cbcbcb;
+	color: #ffffff;
+
+	border: none;
+	border-radius: 50px;
+}
+
+/*Java Script*/
+.borda {
+	border: solid 5px #32b72f;
+}
+
+.botaoContinuar {
+	background-color: #32b72f;
+}
+
+ion-icon {
+	position: absolute;
+	bottom: 15px;
+	right: 12px;
+
+	font-size: 17px;
+
+	color: #32b72f;
+	display: none;
+}
+
+.selecionado {
+	display: initial;
+}
